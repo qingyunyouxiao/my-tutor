@@ -1,0 +1,6 @@
+{
+    "code-runner.executorMap": {
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt < input.txt"
+    },
+    "code-runner.runInTerminal": true
+}
