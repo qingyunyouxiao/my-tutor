@@ -10,9 +10,9 @@ public class Solution {
             long c = sc.nextLong();
             
             // 检查是否有偶数
-            if (a % 2 == 0 || b % 2 == 0 || c % 2 == 0) {
+            if (a % 2 == 0 || b % 2 == 0 || c % 2 == 0) 
                 System.out.println(0);
-            } else {
+            else {
                 // 计算两两乘积的最小值
                 long min = Math.min(Math.min(a * b, b * c), a * c);
                 System.out.println(min);
