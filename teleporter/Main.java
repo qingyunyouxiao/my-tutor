@@ -12,7 +12,6 @@ public class Main {
     static int[] a;
     static List<Integer>[] children; // 创建一个数组，数组的元素类型是可以存放整数的列表
     static int ans = 0;
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ans = 0;
@@ -40,14 +39,14 @@ public class Main {
     static int dfs(int currentCity) {
         int maxDepth = 0;
 
-        for (int child : children[currentCity]) {
+        for (int child : children[currentCity]) { // 遍历所有子城市，是否存在根节点
             int childDepth = dfs(child); 
             maxDepth = Math.max(maxDepth, childDepth + 1);
         }
 
         if (currentCity != 1 && maxDepth == K - 1 && a[currentCity] != 1) {
             ans++;
-            return -1; 
+            return -1; // 标记当前城市被切断，父节点忽略这个子树
         }
         return maxDepth;
     }
