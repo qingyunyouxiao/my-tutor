@@ -1,11 +1,9 @@
-# AtCoder Grand Contest 004 && Java in Action v2
+# AtCoder Grand Contest 008
 
-Date: 26/6/21
+Date: 26/8/2
 
-## Java in Action v2
 
-Link: https://zhuanlan.zhihu.com/p/611169883
 
-## AtCoder Grand Contest 004
+## AtCoder Grand Contest 008
 
-Link: https://atcoder.jp/contests/agc004/tasks
+Link: https://atcoder.jp/contests/agc008/tasks
