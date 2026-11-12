@@ -1,21 +1,25 @@
-# begin 003
+# AtCoder Grand Contest 003 & Cpp Begin Chapter One
 
 Date: 26/10/5
 
+## AtCoder Grand Contest 003
+Link: https://atcoder.jp/contests/agc003/tasks
 
+## Cpp Begin Chapter One
 
-## CHAPTER ONE
+X - Atomic Counter
+Y - LRU
+Z - Weather
 
-1. using 类型别名，给一个很长、复杂的类型起简短别名，方便代码书写阅读。
+### Using alias
 
 ```c++
 using Entry = std::pair<K, V>;
 using List  = std::list<Entry>;
 using Iter  = typename List::iterator;
-```
+ ```
 
-- 别名实际上并不定义一个新的独立类型（被视为与其他类型分开的类型）——它只是为已有类型的新标识符引入。
-- 类型别名与别名类型**完全可以互换**。
+### alias Types
 
 ```c++
 int main()
@@ -33,14 +37,13 @@ int main()
 }
 ```
 
-2. explicit 显式构造函数，阻止编译器自动做隐式类型转换，只允许显式调用构造函数。
+### explicit func
 
 ```c++
 explicit LRUCache(std::size_t capacity) : capacity_(capacity) {}
 ```
 
-- 显式构造函数不能用于复制初始化或复制列表初始化。
-- 显式构造函数**不能用于隐式转换**（因为这需要复制初始化或复制列表初始化）。
+### forbidden explicit usage
 
 ```c++
 #include <iostream>
@@ -51,7 +54,7 @@ private:
     int m_dollars{};
 
 public:
-    explicit Dollars(int d) // now explicit
+    explicit Dollars(int d)
         : m_dollars{ d }
     {
     }
@@ -71,4 +74,3 @@ int main()
     return 0;
 }
 ```
-
