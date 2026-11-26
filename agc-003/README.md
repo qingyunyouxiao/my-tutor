@@ -1,11 +1,11 @@
-# AtCoder Grand Contest 003 & Cpp Begin Chapter One
+# AtCoder Grand Contest 003 &＆ Cpp Begin 1
 
-Date: 26/10/5
+Date: 26/11/26
 
 ## AtCoder Grand Contest 003
 Link: https://atcoder.jp/contests/agc003/tasks
 
-## Cpp Begin Chapter One
+## Cpp Begin 1
 
 X - Atomic Counter
 Y - LRU
