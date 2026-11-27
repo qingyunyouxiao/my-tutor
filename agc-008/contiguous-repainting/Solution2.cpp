@@ -23,4 +23,6 @@ int main() {
     for (int i = 0; i < N; i++) {
         pre_sum[i+1] = pre_sum[i] + a[i];
     }
+
+    long
 }
